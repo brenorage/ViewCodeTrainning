@@ -10,6 +10,11 @@ import UIKit
 
 final class ViewControllerScreen: UIView {
     
+    lazy var headerView: HeaderView = {
+        let view = HeaderView(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
     lazy var gridBoxLeft: GridBoxView = {
         let view = GridBoxView()
@@ -54,6 +59,7 @@ extension ViewControllerScreen: CodeView {
         gridBoxContainer.addArrangedSubview(gridBoxLeft)
         gridBoxContainer.addArrangedSubview(gridBoxRight)
         addSubview(gridBoxContainer)
+        addSubview(headerView)
     }
     
     func setupConstraints() {
@@ -66,7 +72,7 @@ extension ViewControllerScreen: CodeView {
         }
         
         gridBoxContainer.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
+            make.top.equalTo(headerView.snp.bottom).offset(40)
             make.height.equalTo(250)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().inset(20)
@@ -78,6 +84,12 @@ extension ViewControllerScreen: CodeView {
         
         gridBoxRight.snp.makeConstraints { make in
             make.height.equalToSuperview()
+        }
+        
+        headerView.snp.makeConstraints { maker in
+            maker.top.equalTo(safeAreaLayoutGuide.snp.top).offset(20)
+            maker.left.equalToSuperview().offset(20)
+            maker.right.equalToSuperview().inset(20)
         }
     }
     

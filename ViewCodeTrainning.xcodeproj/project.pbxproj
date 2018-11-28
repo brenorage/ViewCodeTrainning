@@ -17,6 +17,8 @@
 		99D7ED722090935800295F3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D7ED712090935800295F3D /* ViewController.swift */; };
 		99D7ED772090935800295F3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D7ED762090935800295F3D /* Assets.xcassets */; };
 		99D7ED7A2090935800295F3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99D7ED782090935800295F3D /* LaunchScreen.storyboard */; };
+		C488A4BA21AF416E00685240 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488A4B921AF416E00685240 /* HeaderView.swift */; };
+		C488A4BC21AF417A00685240 /* HeaderViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488A4BB21AF417A00685240 /* HeaderViewSpec.swift */; };
 		E0921FC5643025AF4E0674A1 /* Pods_ViewCodeTrainningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC38BAAB7118850296F942D /* Pods_ViewCodeTrainningTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		99F7C18A209096D40007D3D7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		99F7C18B209096D50007D3D7 /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
 		AFC38BAAB7118850296F942D /* Pods_ViewCodeTrainningTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeTrainningTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C488A4B921AF416E00685240 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C488A4BB21AF417A00685240 /* HeaderViewSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewSpec.swift; sourceTree = "<group>"; };
 		D71EB2DFE60C340FE84CC146 /* Pods-ViewCodeTrainning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeTrainning.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViewCodeTrainning/Pods-ViewCodeTrainning.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +151,7 @@
 		99D7ED6E2090935800295F3D /* ViewCodeTrainning */ = {
 			isa = PBXGroup;
 			children = (
+				C488A4B921AF416E00685240 /* HeaderView.swift */,
 				99D7ED6F2090935800295F3D /* AppDelegate.swift */,
 				99D7ED712090935800295F3D /* ViewController.swift */,
 				99D7ED762090935800295F3D /* Assets.xcassets */,
@@ -162,6 +167,7 @@
 		99D7ED832090935800295F3D /* ViewCodeTrainningTests */ = {
 			isa = PBXGroup;
 			children = (
+				C488A4BB21AF417A00685240 /* HeaderViewSpec.swift */,
 				99D7ED862090935800295F3D /* Info.plist */,
 				992F6D192092066000BD338D /* GridBoxViewSpec.swift */,
 				992F6D1B20921B5800BD338D /* ViewControllerScreenSpec.swift */,
@@ -277,15 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ViewCodeTrainning-checkManifestLockResult.txt",
 			);
@@ -299,15 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ViewCodeTrainningTests-checkManifestLockResult.txt",
 			);
@@ -321,16 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ViewCodeTrainning/Pods-ViewCodeTrainning-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -345,8 +339,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ViewCodeTrainningTests/Pods-ViewCodeTrainningTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
@@ -355,8 +347,6 @@
 				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
@@ -376,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				998BB6452090D7C90056F2B9 /* GridBoxView.swift in Sources */,
+				C488A4BA21AF416E00685240 /* HeaderView.swift in Sources */,
 				99D7ED722090935800295F3D /* ViewController.swift in Sources */,
 				998BB6412090C93B0056F2B9 /* ViewControllerScreen.swift in Sources */,
 				99D7ED702090935800295F3D /* AppDelegate.swift in Sources */,
@@ -388,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				992F6D1A2092066000BD338D /* GridBoxViewSpec.swift in Sources */,
+				C488A4BC21AF417A00685240 /* HeaderViewSpec.swift in Sources */,
 				992F6D1C20921B5800BD338D /* ViewControllerScreenSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
